@@ -1,0 +1,54 @@
+@include breakpoint(1550px down) {
+  .header {
+    .float-block {
+      right: 2em;
+    }
+  }
+}
+
+@include breakpoint(medium down) {
+  .header {
+    min-height: 41em;
+    margin-top: -15em;
+    .float-block {
+      display: none;
+    }
+  }
+  .header-info {
+    display: none;
+    &.mobile {
+      display: block;
+      .info {
+        div {
+          margin: auto;
+          display: inline-flex;
+          img {
+            margin-right: 1em;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@include breakpoint(small down) { // SMALL
+  .header {
+    min-height: 32em;
+    .text{
+      h1{
+        line-height: 37px;
+        font-size: 3em;
+      }
+    }
+    .float-block {
+      overflow:hidden;
+      &:before {
+        top: 8em;
+      }
+    }
+  }
+}
+
+@include breakpoint(400px down) {
+}

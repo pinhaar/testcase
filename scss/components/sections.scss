@@ -1,0 +1,64 @@
+.three-column{
+  .cart {
+    background-color: #F7F9FC;
+    margin: .5em;
+    padding: 0 !important;
+    width: 100%;
+    .cart-text {
+      padding: 1em 2em 5em 2em;
+      h4{
+        color: #000000;
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 1.5em;
+        width: 10em;
+      }
+      p{
+        margin-bottom: 1.5em;
+      }
+    }
+  }
+  &.mobile {
+    display: none;
+  }
+}
+
+
+.img-right {
+  .text {
+    h2 {
+      color: $black;
+      line-height: 48px;
+      margin-bottom: .7em;
+    }
+    p{
+      font-size: 18px;
+      margin-bottom: 3em;
+    }
+  }
+  .img {
+
+  }
+
+}
+
+.demo {
+  .grid-container {
+    height: 8em;
+    border-top: 1px solid $border-line;
+    border-bottom: 1px solid $border-line;
+    .grid-x {
+      height: 100%;
+      .cell{
+        margin: auto 0;
+        h4 {
+          color: $black;
+        }
+
+        &:last-child{
+          text-align: right;
+        }
+      }
+    }
+  }
+}

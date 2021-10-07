@@ -1,0 +1,22 @@
+.button{
+  font-size: 16px;
+  border-radius: 30px;
+  padding: .5em 1.5em ;
+  letter-spacing: 0px;
+  &.orange {
+    background-color: #F77D25;
+    color: #FFFFFF;
+  }
+  &.line-blue {
+    border: 2px solid #004FAA;
+    color: #004FAA;
+  }
+}
+
+.link{
+  color:#FA812D;
+  &:hover{
+    color:#FA812D;
+    text-decoration: underline;
+  }
+}

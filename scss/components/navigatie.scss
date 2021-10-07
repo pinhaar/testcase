@@ -1,0 +1,23 @@
+.main-nav{
+  .logo {
+    margin: auto;
+    color: white;
+    font-size: 36px;
+  }
+  .menu {
+    li {
+      font-size: 18px;
+      padding: 2em 1.2em;
+      color: white;
+    }
+    .sub-menu{
+      margin-right: 1em;
+      &:after {
+        margin-left: .5em;
+        position: absolute;
+        content: url("/images/icon/chevron_down.svg");
+      }
+    }
+  }
+
+}

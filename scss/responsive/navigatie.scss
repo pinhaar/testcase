@@ -1,0 +1,158 @@
+@include breakpoint(1550px down) {
+}
+
+@include breakpoint(medium down) {
+  .top-header{
+    display: none;
+  }
+  .main-nav {
+    .mobile-menu-button {
+      display: block;
+      text-align: right;
+      font-size: 30px;
+      padding: .4em;
+      color: #F7F9FC;
+    }
+    .menu{
+      display: none;
+    }
+  }
+  .mobile-menu{
+    position: fixed;
+    z-index: 99999;
+    background-color: #F7F9FC;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    .logo {
+      p {
+        font-size: 60px;
+      }
+    }
+    .close {
+      text-align: right;
+      padding: 1em;
+      span {
+        font-size: 30px;
+      }
+    }
+    .menu {
+      text-align: center;
+      .top-menu {
+        margin: .5rem 0;
+        li{
+          &:first-child{
+            //padding-left:0;
+          }
+          font-size: 14px;
+          padding: 0 1.5em;
+          display: inline-block;
+        }
+      }
+      .cell:last-child {
+        text-align: center ;
+      }
+      .menu{
+        display: block;
+        font-size: 18px;
+        .sub-menu{
+          margin-right: unset;
+          &:after {
+            margin-left: .5em;
+            position: absolute;
+            content: url("/images/icon/chevron_down_blue.svg");
+            color: #0c3d5d;
+          }
+        }
+      }
+    }
+    .float-content {
+      text-align: center;
+      .float-block {
+        margin-top: 3em;
+        padding: 2em;
+        h3{
+          font-size: 28px;
+          text-align: left;
+        }
+        .grid-container{
+          padding: 0;
+        }
+        .float-text {
+          text-align: left;
+          .link {
+            display: block;
+            padding: .1rem 1rem;
+          }
+          //.orange {
+          //  margin-top: .5em;
+          //}
+          .float-button {
+            margin-top: 2em;
+            width: 100%;
+            text-align: center;
+            a {
+
+            }
+          }
+        }
+      }
+      .img-pers {
+        position: absolute;
+        bottom: 0;
+        text-align: right;
+      }
+    }
+  }
+}
+
+@include breakpoint(small down) { // SMALL
+  .mobile-menu{
+    .menu {
+      .top-menu {
+        li{
+          padding: 0 .5em;
+        }
+      }
+      .menu{
+        display: block;
+        font-size: 18px;
+        .sub-menu{
+          margin-right: unset;
+        }
+      }
+    }
+    .float-content{
+      .float-block {
+        display: block;
+        font-size: 18px;
+        h3{
+          font-size: 23px;
+          line-height: 23px;
+        }
+        .float-text {
+          text-align: left;
+          .link {
+            padding: 0;
+          }
+          .orange {
+            margin-top: .5em;
+          }
+          .float-button {
+            width: 100%;
+            a{
+              text-align: center;
+            }
+          }
+        }
+      }
+      .img-pers {
+        display: none;
+      }
+    }
+  }
+}
+
+@include breakpoint(400px down) {
+}
